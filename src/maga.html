@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <h1 class="text-[36px] font-[800] mb-[30px]">
+    <span class="text-[#00c8ff]">MY </span>
+    <span class="text-[#7c3aed]">TO </span>
+    <span class="text-[#a855f7]">DO </span>
+    <span class="text-[#6d28d9]">LIST</span>
+  </h1>
+ 
+  <div class="w-full max-w-[820px]">
+ 
+    <!-- Input + кнопка -->
+    <div class="flex gap-[12px] mb-[20px]">
+      <input
+        id="todoInput"
+        type="text"
+        placeholder="Masukan to do list"
+        class="flex-1 bg-[white] border border-[#e5e7eb] rounded-[10px] px-[20px] py-[14px] text-[16px] text-[#374151] outline-none"
+      />
+      <button
+        onclick="addTodo()"
+        style="background: linear-gradient(to right, #00c8ff, #a855f7)"
+        class="text-[white] text-[16px] font-[600] px-[30px] py-[14px] rounded-[10px] cursor-pointer border-none"
+      >
+        Save
+      </button>
+    </div>
+ 
+    <!-- Счётчики -->
+    <div class="flex gap-[12px] mb-[24px]">
+      <div class="flex-1 bg-[white] border border-[#e5e7eb] rounded-[10px] px-[20px] py-[12px]">
+        <span class="text-[#a855f7] text-[15px] font-[500]">Todo Done : </span>
+        <span class="text-[#f97316] text-[15px] font-[700]" id="doneCount">0</span>
+      </div>
+      <div class="flex-1 bg-[white] border border-[#e5e7eb] rounded-[10px] px-[20px] py-[12px]">
+        <span class="text-[#06b6d4] text-[15px] font-[500]">Todo On Progress : </span>
+        <span class="text-[#f97316] text-[15px] font-[700]" id="progressCount">0</span>
+      </div>
+    </div>
+ 
+    <!-- Список задач -->
+    <div id="todoList" class="flex flex-col gap-[4px]">
+ 
+      <div class="todo-item bg-[white] border border-[#e5e7eb] rounded-[10px] px-[20px] py-[16px] flex items-center justify-between">
+        <span class="text-[16px] text-[#374151]">Membuat Api</span>
+        <div class="flex items-center gap-[12px]">
+          <div class="w-[24px] h-[24px] bg-[#fde8e8] rounded-[4px]"></div>
+          <div class="w-[24px] h-[24px] bg-[#fef9e7] rounded-[4px]"></div>
+          <div class="w-[24px] h-[24px] bg-[#e8fdf0] rounded-[4px]"></div>
+        </div>
+      </div>
+ 
+      <div class="todo-item bg-[white] border border-[#e5e7eb] rounded-[10px] px-[20px] py-[16px] flex items-center justify-between">
+        <span class="text-[16px] text-[#374151]">Membuat tampilan Home page</span>
+        <div class="flex items-center gap-[12px]">
+          <div class="w-[24px] h-[24px] bg-[#fde8e8] rounded-[4px]"></div>
+          <div class="w-[24px] h-[24px] bg-[#fef9e7] rounded-[4px]"></div>
+          <div class="w-[24px] h-[24px] bg-[#e8fdf0] rounded-[4px]"></div>
+        </div>
+      </div>
+ 
+      <div class="todo-item bg-[white] border border-[#e5e7eb] rounded-[10px] px-[20px] py-[16px] flex items-center justify-between">
+        <span class="text-[16px] text-[#374151]">Dashboard Menu</span>
+        <div class="flex items-center gap-[12px]">
+          <div class="w-[24px] h-[24px] bg-[#fde8e8] rounded-[4px]"></div>
+          <div class="w-[24px] h-[24px] bg-[#fef9e7] rounded-[4px]"></div>
+          <div class="w-[24px] h-[24px] bg-[#e8fdf0] rounded-[4px]"></div>
+        </div>
+      </div>
+ 
+      <div class="todo-item bg-[white] border border-[#e5e7eb] rounded-[10px] px-[20px] py-[16px] flex items-center justify-between">
+        <span class="text-[16px] text-[#374151]">Usability testing bareng marketing</span>
+        <div class="flex items-center gap-[12px]">
+          <div class="w-[24px] h-[24px] bg-[#fde8e8] rounded-[4px]"></div>
+          <div class="w-[24px] h-[24px] bg-[#fef9e7] rounded-[4px]"></div>
+          <div class="w-[24px] h-[24px] bg-[#e8fdf0] rounded-[4px]"></div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+ 
+</body>
+</html>
